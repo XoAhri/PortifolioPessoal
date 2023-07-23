@@ -1,0 +1,86 @@
+/* estilos css */
+body {
+  background-color: rgba(20, 20, 20, 100);
+  width: 100%;
+}
+
+/* Header */
+.Header {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #38d8bb;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.Header div {
+  height: 80px;
+  width: fit-content;
+}
+
+.Header #Icone {
+  display: inline;
+  color: rgba(56, 216, 187, 100);
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: rgba(59, 59, 59, 100);
+  border-radius: 5px;
+  border: 1px solid rgba(56, 216, 187, 100);
+  padding: 2px 3px;
+  margin: 27px 6px 27px 54px;
+}
+
+.Header #Texto {
+  display: inline;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  margin: 25px 16px 25px auto;
+}
+
+.Header #Logo {
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.Header #Menu {
+  display: flex;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  gap: 64px;
+  margin: auto;
+}
+
+.Header #Menu a {
+  margin: 25px auto 25px auto;
+  color: white;
+  text-decoration: none;
+}
+
+.Header #Switch {
+  white-space: nowrap;
+}
+
+.Header #Switch span {
+  display: inline-flex;
+  width: 52px;
+  height: 24px;
+  background-color: rgba(60, 60, 60, 100);
+  border: 1px solid rgba(56, 216, 187, 100);
+  border-radius: 5px;
+  right: 0;
+  margin: 27px -26px 27px 16px;
+}
+
+.Header #Switch img {
+  display: inline-flex;
+  background-color: rgba(49, 49, 49, 100);
+  padding: 4px;
+  outline: 2px solid rgba(56, 216, 187, 100);
+  border-radius: 5px;
+  z-index: 1;
+  right: 0;
+  margin: 27px 54px 27px auto;
+}
