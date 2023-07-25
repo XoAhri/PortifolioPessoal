@@ -1,7 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variaveis de cor */
+:root {
+  --cor-bg: rgba(20, 20, 20, 100);
+  --cor-bg-header: rgba(20, 20, 20, 100);
+  --cor-texto-header: rgba(255, 255, 255, 100);
+  --cor-bg-switch: rgba(60, 60, 60, 100);
+  --cor-texto: rgba(255, 255, 255, 100);
+  --cor-destaque: rgba(56, 216, 187, 100);
+  --cor-bg-conteudo: rgba(60, 60, 60, 100);
+  --switch-img-url: url(./Assets/Dark.svg) >;
+  --switch-dark: hidden;
+  --switch-light: none;
+}
+
+.light {
+  --cor-bg: rgba(255, 255, 255, 100);
+  --cor-bg-header: rgba(20, 20, 20, 100);
+  --cor-texto-header: rgba(255, 255, 255, 100);
+  --cor-bg-switch: rgba(60, 60, 60, 100);
+  --cor-texto: rgba(0, 0, 0, 100);
+  --cor-destaque: rgba(227, 158, 23, 100);
+  --cor-bg-conteudo: rgba(200, 200, 200, 5);
+  --switch-img-url: url(<ion-iconname="moon-outline"color="red"></ion-icon>);
+  --switch-dark: none;
+  --switch-light: hidden;
+}
+
 /* estilos css */
 body {
-  background-color: rgba(20, 20, 20, 100);
+  background-color: var(--cor-bg);
   width: 100%;
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  color: var(--cor-texto);
 }
 
 /* Header */
@@ -9,42 +45,43 @@ body {
   display: flex;
   height: 80px;
   width: 100%;
-  border-bottom: 1px solid #38d8bb;
+  background-color: var(--cor-bg-header);
+  border-bottom: 1px solid var(--cor-destaque);
   font-size: 24px;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 .Header div {
   height: 80px;
   width: fit-content;
 }
-
-.Header #Icone {
+.Header #IconeLogo {
   display: inline;
-  color: rgba(56, 216, 187, 100);
+  color: var(--cor-destaque);
   font-family: "Prompt", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
-  background-color: rgba(59, 59, 59, 100);
+  background-color: var(--cor-bg-header);
   border-radius: 5px;
-  border: 1px solid rgba(56, 216, 187, 100);
+  border: 2px solid var(--cor-destaque);
   padding: 2px 3px;
   margin: 27px 6px 27px 54px;
 }
-
-.Header #Texto {
+.Header #TextoLogo {
   display: inline;
-  color: white;
-  font-family: "Source Code Pro", monospace;
-  font-weight: 600;
+  color: var(--cor-texto-header);
+  font-weight: 600px;
   margin: 25px 16px 25px auto;
+  font-size: 24px;
 }
-
 .Header #Logo {
   display: inline-flex;
   white-space: nowrap;
+  text-decoration: none;
 }
-
 .Header #Menu {
   display: flex;
   font-family: "Source Code Pro", monospace;
@@ -52,35 +89,59 @@ body {
   gap: 64px;
   margin: auto;
 }
-
 .Header #Menu a {
   margin: 25px auto 25px auto;
-  color: white;
+  color: var(--cor-texto-header);
   text-decoration: none;
 }
 
-.Header #Switch {
-  white-space: nowrap;
+/* Switch */
+#Switch {
+  position: absolute;
+  width: 52px;
+  right: 0;
+  margin: auto 54px auto 0;
+  border: 1px solid red;
 }
 
-.Header #Switch span {
+#sol {
+  display: var(--switch-light);
+  font-size: 18px;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: var(--cor-bg-header);
+  color: var(--cor-destaque);
+  outline: 2px solid var(--cor-destaque);
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0px;
+}
+
+#lua {
+  display: var(--switch-dark);
+  font-size: 18px;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: var(--cor-bg-header);
+  color: var(--cor-destaque);
+  outline: 2px solid var(--cor-destaque);
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+}
+
+#Switch span {
   display: inline-flex;
   width: 52px;
   height: 24px;
-  background-color: rgba(60, 60, 60, 100);
-  border: 1px solid rgba(56, 216, 187, 100);
+  background-color: var(--cor-bg-switch);
+  border: 1px solid var(--cor-destaque);
   border-radius: 5px;
-  right: 0;
-  margin: 27px -26px 27px 16px;
-}
-
-.Header #Switch img {
-  display: inline-flex;
-  background-color: rgba(49, 49, 49, 100);
-  padding: 4px;
-  outline: 2px solid rgba(56, 216, 187, 100);
-  border-radius: 5px;
-  z-index: 1;
-  right: 0;
-  margin: 27px 54px 27px auto;
+  margin: 27px 0px 27px 0px;
 }

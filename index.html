@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,26 +8,163 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Source+Code+Pro:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Source+Code+Pro:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
-  <body class="dark">
-    <div class="Header">
-      <div id="Logo">
-        <p id="Icone">LM</p>
-        <p id="Texto">Lucas Minetto</p>
-      </div>
-      <div id="Menu">
-        <a href="#">Sobre</a>
-        <a href="#">Técnologias</a>
-        <a href="#">Portifólio</a>
-      </div>
-
+  <body>
+    <header class="Header">
+      <a id="Logo" href="./index.html">
+        <h1 id="IconeLogo">LM</h1>
+        <h1 id="TextoLogo">Lucas Minetto</h1>
+      </a>
+      <list id="Menu">
+        <ul>
+          <a href="#">Sobre</a>
+        </ul>
+        <ul>
+          <a href="#">Técnologias</a>
+        </ul>
+        <ul>
+          <a href="#">Portifólio</a>
+        </ul>
+      </list>
       <div id="Switch">
-        <span></span>
-        <img src="./Assets/Dark.svg" alt="Lua" />
+        <span onclick="toggleMode()"></span>
+        <ion-icon name="sunny-outline" onclick="toggleMode()" id="sol"></ion-icon>
+        <ion-icon name="moon-outline" onclick="toggleMode()" id="lua"></ion-icon>
+      </div>
+    </header>
+    <div class="Sobre">
+      <h1>> Sobre</h1>
+      <div id="SobreImagem">
+        <img src="./Assets/Perfil.png" alt="Foto de perfil" />
+        <button><a href="#">Ver curricúlo</a></button>
+      </div>
+      <div id="SobreTexto">
+        <p>
+          Olá, me chamo Lucas Minetto!<br /><br /><br />
+          Comecei minha carreira como designer publicitário, mas ao decorrer do
+          tempo desenvolvi interesse em estudar sobre UI/UX design, e logo após
+          me interessei pela área de desenvolvimento WEB voltado ao front-end, o
+          que me levou a conhecer mais sobre o mundo da programação e me fez ter
+          uma visão completamente diferente do que eu realmente queria, então
+          comecei a estudar sobre desenvolvimento back-end, onde eu poderia
+          finalmente dar vida aos meus projetos e completar a parte que faltava.
+        </p>
       </div>
     </div>
+    <div class="Tecnologias">
+      <h1>> Técnologias</h1>
+      <div id="IconesTecnologias"></div>
+      <ul>
+        <li><img src="./Assets/HTML.svg" alt="Logo da linguagem HTML" /></li>
+        <li><img src="./Assets/CSS.svg" alt="Logo da linguagem CSS" /></li>
+        <li>
+          <img
+            src="./Assets/JavaScript.svg"
+            alt="Logo da linguagem JavaScript"
+          />
+        </li>
+        <li>
+          <img src="./Assets/Python.svg" alt="Logo da linguagem Python" />
+        </li>
+        <li><img src="./Assets/Java.svg" alt="Logo da linguagem java" /></li>
+        <li><img src="./Assets/MySQL.svg" alt="Logo do MySQL" /></li>
+        <li><img src="./Assets/git.svg" alt="Logo do GIT" /></li>
+        <li><img src="./Assets/Figma.svg" alt="Logo do software Figma" /></li>
+        <li>
+          <img src="./Assets/Photoshop.svg" alt="Logo do software Photoshop" />
+        </li>
+        <li>
+          <img src="./Assets/Lightroom.svg" alt="Logo do software Lightroom" />
+        </li>
+        <li>
+          <img
+            src="./Assets/Illustrator.svg"
+            alt="Logo do software Illustrator"
+          />
+        </li>
+        <li>
+          <img src="./Assets/Adobe XD.svg" alt="Logo do software Adobe XD" />
+        </li>
+      </ul>
+      <div id="DescricaoTecnologias"></div>
+      <h2>HTML</h2>
+      <p>
+        É uma linguagem de marcação de hipertexto, utilizada para criar e
+        estruturar o conteúdo de paginas WEB. É a base fundamental para qualquer
+        site.
+      </p>
+    </div>
+    <div class="Portifolio">
+      <h1>> Portifólio</h1>
+      <div id="PortifolioSobre">
+        <div id="PortifolioTexto">
+          <h2>Projeto DevLinks</h2>
+          <p>
+            O projeto DevLinks foi desenvolvido ao longo do curso discover da
+            Rocketseat. O projeto tem a intenção de ser um cartão de
+            apresentação do desenvolvedor contando com modo escuro e claro,
+            botões personalizados de acordo com a necessidade do dev e links
+            parar mídias sociais. Trás consigo um layout responsivo, além de
+            trazer os conceitos de utilização de variáveis dentro do CSS para
+            implementação do modo escuro através do JavaScript.
+          </p>
+        </div>
+        <p>Técnologias utilizadas:</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>GIT</li>
+        </ul>
+      </div>
+      <div id="PortifolioPreview">
+        <img
+          src="./Assets/PreviewPortifolio.png"
+          alt="Foto do projeto DEVLinks"
+        />
+      </div>
+    </div>
+    <footer>
+      <p>Desenvolvido por Lucas Minetto</p>
+      <ul class="Sociais">
+        <li>
+          <a href="#"><img src="./Assets/Linkedin.svg" alt="Logo GitHub" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./Assets/GitHub.svg" alt="Logo GitHub" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./Assets/Instagram.svg" alt="Logo GitHub" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./Assets/Facebook.svg" alt="Logo GitHub" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./Assets/Whatsapp.svg" alt="Logo GitHub" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./Assets/Twitch.svg" alt="Logo GitHub" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./Assets/Youtube.svg" alt="Logo GitHub" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./Assets/Twitter.svg" alt="Logo GitHub" /></a>
+        </li>
+      </ul>
+      <p>lucas-minetto1@hotmail.com</p>
+    </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
