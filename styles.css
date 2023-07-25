@@ -55,13 +55,14 @@ body {
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 999;
 }
 .Header div {
   height: 80px;
   width: fit-content;
 }
 .Header #IconeLogo {
-  display: inline;
+  display: flex;
   color: var(--cor-destaque);
   font-family: "Prompt", sans-serif;
   font-weight: 600;
@@ -69,30 +70,39 @@ body {
   background-color: var(--cor-bg-header);
   border-radius: 5px;
   border: 2px solid var(--cor-destaque);
-  padding: 2px 3px;
-  margin: 27px 6px 27px 54px;
+  padding: 1px 3px;
+  margin: auto 6px auto 0px;
 }
 .Header #TextoLogo {
-  display: inline;
+  display: flex;
   color: var(--cor-texto-header);
   font-weight: 600px;
-  margin: 25px 16px 25px auto;
+  margin: auto auto auto auto;
   font-size: 24px;
 }
 .Header #Logo {
-  display: inline-flex;
+  display: flex;
   white-space: nowrap;
   text-decoration: none;
+  margin: auto auto auto 54px;
+  width: fit-content;
+  border: 1px solid red;
 }
+.Header nav {
+  display: flex;
+  margin: auto;
+  position: absolute;
+}
+
 .Header #Menu {
   display: flex;
   font-family: "Source Code Pro", monospace;
   font-weight: 600;
   gap: 64px;
-  margin: auto;
+  list-style: none;
+  border: 1px solid red;
 }
 .Header #Menu a {
-  margin: 25px auto 25px auto;
   color: var(--cor-texto-header);
   text-decoration: none;
 }
@@ -117,8 +127,7 @@ body {
   z-index: 1;
   right: 0;
   transform: translateY(-50%);
-  top: 50%;
-  right: 0px;
+  top: 49%;
 }
 
 #lua {
@@ -131,9 +140,8 @@ body {
   outline: 2px solid var(--cor-destaque);
   position: absolute;
   z-index: 1;
-  right: 0;
   transform: translateY(-50%);
-  top: 50%;
+  top: 49%;
   left: 0;
 }
 
@@ -158,19 +166,16 @@ body {
 
 #Sobre {
   display: flex;
-  border: 1px solid red;
 }
 
 #SobreImagem {
   display: block;
   text-align: center;
   margin: auto;
-  border: 1px solid red;
 }
 #SobreImagem img {
   display: block;
   width: 160px;
-  border: 1px solid red;
   margin: auto auto 15px auto;
 }
 #SobreImagem button {
@@ -190,7 +195,6 @@ body {
 }
 #SobreTexto {
   display: flex;
-  border: 1px solid red;
   right: 0;
   margin: auto auto auto 32px;
 }
