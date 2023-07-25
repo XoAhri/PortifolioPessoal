@@ -38,6 +38,8 @@ body {
   font-family: "Source Code Pro", monospace;
   font-size: 16px;
   color: var(--cor-texto);
+  width: 70%;
+  margin: auto;
 }
 
 /* Header */
@@ -101,7 +103,6 @@ body {
   width: 52px;
   right: 0;
   margin: auto 54px auto 0;
-  border: 1px solid red;
 }
 
 #sol {
@@ -144,4 +145,78 @@ body {
   border: 1px solid var(--cor-destaque);
   border-radius: 5px;
   margin: 27px 0px 27px 0px;
+}
+
+/* sobre */
+#First {
+  display: block;
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 116px 0px 36px 0px;
+}
+
+#Sobre {
+  display: flex;
+  border: 1px solid red;
+}
+
+#SobreImagem {
+  display: block;
+  text-align: center;
+  margin: auto;
+  border: 1px solid red;
+}
+#SobreImagem img {
+  display: block;
+  width: 160px;
+  border: 1px solid red;
+  margin: auto auto 15px auto;
+}
+#SobreImagem button {
+  display: inline;
+  text-decoration: none;
+  background-color: var(--cor-bg);
+  font-size: 12;
+  font-weight: 400;
+  border: 1px solid var(--cor-destaque);
+  border-radius: 8px;
+  margin: auto;
+}
+#SobreImagem a {
+  text-decoration: none;
+  color: var(--cor-destaque);
+  padding: 3px 11px;
+}
+#SobreTexto {
+  display: flex;
+  border: 1px solid red;
+  right: 0;
+  margin: auto auto auto 32px;
+}
+
+#SobreTexto p {
+  display: flex;
+  background-color: var(--cor-bg-conteudo);
+  border: 1px solid var(--cor-destaque);
+  border-radius: 8px;
+  width: fit-content;
+  padding: 12px;
+}
+
+h1 {
+  display: block;
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 36px 0px 36px 0px;
+}
+
+p {
+  display: flex;
+  background-color: var(--cor-bg-conteudo);
+  border: 1px solid var(--cor-destaque);
+  border-radius: 8px;
+  width: fit-content;
+  padding: 12px;
 }
