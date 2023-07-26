@@ -24,14 +24,18 @@
   --cor-texto-header: rgba(255, 255, 255, 100);
   --cor-bg-switch: rgba(60, 60, 60, 100);
   --cor-texto: rgba(0, 0, 0, 100);
-  --cor-destaque: rgba(227, 158, 23, 100);
-  --cor-bg-conteudo: rgba(200, 200, 200, 5);
+  --cor-destaque: rgba(237, 82, 16, 100);
+  --cor-bg-conteudo: rgba(230, 230, 230, 5);
   --switch-img-url: url(<ion-iconname="moon-outline"color="red"></ion-icon>);
   --switch-dark: none;
   --switch-light: hidden;
 }
 
 /* estilos css */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--cor-bg);
   width: 100%;
@@ -158,7 +162,7 @@ body {
   margin: 27px 0px 27px 0px;
 }
 
-/* sobre */
+/* Sobre */
 #First {
   display: block;
   font-family: "Prompt", sans-serif;
@@ -190,10 +194,11 @@ body {
   border: 1px solid var(--cor-destaque);
   border-radius: 8px;
   margin: auto;
+  cursor: pointer;
 }
-#SobreImagem button :hover  {
-  font-weight: 600;
-  border: 2px solid var(--cor-destaque);
+#SobreImagem :hover {
+  border-color: var(--cor-texto);
+  color: var(--cor-texto);
 }
 
 #SobreImagem a {
@@ -236,11 +241,96 @@ h1 {
   align-items: center;
   fill: var(--cor-texto);
   margin: 2%;
+  cursor: pointer;
 }
-.Tecnologias ul :hover  {
+.Tecnologias ul :hover {
   border-color: var(--cor-destaque);
-  fill: var(--cor-destaque)
+  fill: var(--cor-destaque);
 }
 
+/* Portifolio */
+.Portifolio {
+  display: flex;
+  gap: 16px;
+}
+#PortifolioTexto {
+  background-color: var(--cor-bg-conteudo);
+  border: 1px solid var(--cor-destaque);
+  border-radius: 8px;
+  width: fit-content;
+  padding: 12px;
+  margin-bottom: 5px;
+}
+#PortifolioTexto h2{
+  text-align: center;
+  margin-bottom: 8px;
+}
+.Portifolio #PortifolioPreview img {
+  width: 360px;
+  border-radius: 8px;
+  outline: 1px solid var(--cor-destaque);
+}
+.Portifolio ul{
+  margin-top: 8px;
+  list-style: none;
+  display: inline-flex;
+  gap: 16px;
+}
+.Portifolio li{
+display: flex;
+padding: 0px 10px;
+border: 1px solid var(--cor-destaque);
+border-radius: 9999px;
+margin-top: 5px;
+color: var(--cor-destaque);
+cursor: pointer;
+}
+.Portifolio :hover{
+  color: var(--cor-texto);
+  border-color: var(--cor-texto) ;
+}
+#portifolio a {
+  text-decoration: none;
+  color: var(--cor-destaque);
+  font-size: 24px;
+  margin: 0px 20px;
+  font-weight: 400;
+}
+#portifolio button {
+  display: block;
+  text-decoration: none;
+  background-color: var(--cor-bg);
+  border: 1px solid var(--cor-destaque);
+  border-radius: 9999px;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 24px;
+}
+#portifolio button :hover {
+  border-color: var(--cor-texto);
+  color: var(--cor-texto);
+}
 
-
+/* Footer */
+footer {
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding: 16px 0px 25px 0px;
+  border-top: 1px solid var(--cor-destaque);
+  text-align: center;
+  background-color: var(--cor-bg-header);
+  color: var(--cor-texto-header);
+  left: 0px;
+  margin-top: 36px;
+}
+.Rodape ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 16px;
+  margin: 16px auto;
+  fill: var(--cor-texto-header);
+}
+.Rodape :hover ul {
+  fill: var(--cor-destaque);
+}
