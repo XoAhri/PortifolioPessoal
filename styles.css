@@ -86,30 +86,33 @@ body {
   text-decoration: none;
   margin: auto auto auto 54px;
   width: fit-content;
-  border: 1px solid red;
-}
-.Header nav {
-  display: flex;
-  margin: auto;
-  position: absolute;
 }
 
+.Header nav {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
 .Header #Menu {
   display: flex;
   font-family: "Source Code Pro", monospace;
   font-weight: 600;
   gap: 64px;
   list-style: none;
-  border: 1px solid red;
 }
 .Header #Menu a {
   color: var(--cor-texto-header);
   text-decoration: none;
 }
+.Header #Menu :hover {
+  color: var(--cor-destaque);
+  font-weight: 700;
+}
 
 /* Switch */
 #Switch {
-  position: absolute;
+  position: relative;
   width: 52px;
   right: 0;
   margin: auto 54px auto 0;
@@ -127,7 +130,7 @@ body {
   z-index: 1;
   right: 0;
   transform: translateY(-50%);
-  top: 49%;
+  top: 50%;
 }
 
 #lua {
@@ -141,7 +144,7 @@ body {
   position: absolute;
   z-index: 1;
   transform: translateY(-50%);
-  top: 49%;
+  top: 50%;
   left: 0;
 }
 
@@ -188,6 +191,11 @@ body {
   border-radius: 8px;
   margin: auto;
 }
+#SobreImagem button :hover  {
+  font-weight: 600;
+  border: 2px solid var(--cor-destaque);
+}
+
 #SobreImagem a {
   text-decoration: none;
   color: var(--cor-destaque);
@@ -216,11 +224,23 @@ h1 {
   margin: 36px 0px 36px 0px;
 }
 
-p {
-  display: flex;
-  background-color: var(--cor-bg-conteudo);
-  border: 1px solid var(--cor-destaque);
+.Tecnologias li {
+  list-style: none;
+  display: inline-flex;
+  width: 126px;
+  height: 126px;
+  background-color: var(--cor-bg);
   border-radius: 8px;
-  width: fit-content;
-  padding: 12px;
+  border: 1px solid var(--cor-texto);
+  justify-content: center;
+  align-items: center;
+  fill: var(--cor-texto);
+  margin: 2%;
 }
+.Tecnologias ul :hover  {
+  border-color: var(--cor-destaque);
+  fill: var(--cor-destaque)
+}
+
+
+
