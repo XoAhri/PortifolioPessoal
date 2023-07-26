@@ -261,7 +261,7 @@ h1 {
   padding: 12px;
   margin-bottom: 5px;
 }
-#PortifolioTexto h2{
+#PortifolioTexto h2 {
   text-align: center;
   margin-bottom: 8px;
 }
@@ -270,24 +270,24 @@ h1 {
   border-radius: 8px;
   outline: 1px solid var(--cor-destaque);
 }
-.Portifolio ul{
+.Portifolio ul {
   margin-top: 8px;
   list-style: none;
   display: inline-flex;
   gap: 16px;
 }
-.Portifolio li{
-display: flex;
-padding: 0px 10px;
-border: 1px solid var(--cor-destaque);
-border-radius: 9999px;
-margin-top: 5px;
-color: var(--cor-destaque);
-cursor: pointer;
+.Portifolio li {
+  display: flex;
+  padding: 0px 10px;
+  border: 1px solid var(--cor-destaque);
+  border-radius: 9999px;
+  margin-top: 5px;
+  color: var(--cor-destaque);
+  cursor: pointer;
 }
-.Portifolio :hover{
+.Portifolio :hover {
   color: var(--cor-texto);
-  border-color: var(--cor-texto) ;
+  border-color: var(--cor-texto);
 }
 #portifolio a {
   text-decoration: none;
@@ -306,7 +306,7 @@ cursor: pointer;
   cursor: pointer;
   margin-top: 24px;
 }
-#portifolio button :hover {
+#VerProjetos :hover{
   border-color: var(--cor-texto);
   color: var(--cor-texto);
 }
@@ -329,8 +329,12 @@ footer {
   display: inline-flex;
   gap: 16px;
   margin: 16px auto;
-  fill: var(--cor-texto-header);
 }
-.Rodape :hover ul {
-  fill: var(--cor-destaque);
+.Rodape a {
+  text-decoration: none;
+  color: var(--cor-texto-header);
+  font-size: 24px;
+}
+.Rodape li :hover {
+  color: var(--cor-destaque);
 }
